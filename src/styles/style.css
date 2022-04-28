@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: #212529;
+}
+
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.App {
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.subTitulo {
+    color: white;
+    display: block;
+    letter-spacing: 10px;
+}
+
+h1 {
+    text-align: center;
+    display: block;
+    font-size: 2rem;
+    letter-spacing: 15px;
+    color:white;
+}
+.imagenCentral{
+    width: 90%;
+    max-width: 800px;
+    display: block;
+    margin:0 auto;
+}
+.imagenCentral img {
+    width: 100%;
+}

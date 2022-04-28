@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+    @media only screen and (max-width: 900px) {
+        font-size: 11px;
+    }
+    @media only screen and (max-width: 600px) {
+        font-size: 10px;
+    }
+}
+body {
+    background-color: #212529;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.App {
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    .subTitulo {
+        color: white;
+        display: block;
+        letter-spacing: 10px;
+    }
+    .imagenCentral {
+        width: 90%;
+        max-width: 800px;
+        display: block;
+        margin: 0 auto;
+        img {
+            width: 100%;
+        }
+    }
+    h1 {
+        text-align: center;
+        display: block;
+        font-size: 2rem;
+        letter-spacing: 10px;
+        color: white;
+        margin-top: 20px;
+    }
+}
+.container-fluid {
+    justify-content: center!important;
+}
