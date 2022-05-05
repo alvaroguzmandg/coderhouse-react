@@ -1,3 +1,5 @@
+import CartWidget from "../CartWidget/CartWidget"
+import NavCategory from "../NavCategory/NavCategory"
 export default function Header(){
     const navStyles={
         maxWidth: 1200,
@@ -9,7 +11,9 @@ export default function Header(){
         color: "white",
         margin: "0 auto"
     }
-  return(
+
+    return(
+    <>
     <header className="header" >
         <div className="logo">
             <img src="https://alvaroguzmandg.github.io/coderhouse/images/logo-runclub.png" alt="Logo"></img>
@@ -19,6 +23,10 @@ export default function Header(){
             <li>PRODUCTOS</li>
             <li>NOSOTROS</li>
         </ul>
+        <CartWidget count={0}/>
+        
     </header>
+    <NavCategory/>
+    </>
     )
 }
