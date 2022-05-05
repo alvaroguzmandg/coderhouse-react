@@ -1,3 +1,4 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +16,7 @@ html {
     }
 }
 body {
-    background-color: #212529;
+    
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -28,25 +29,33 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10%;
 }
 
 .App {
     margin: 0 auto;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    .subTitulo {
-        color: white;
-        display: block;
-        letter-spacing: 10px;
+    width: 100%;
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding:20px;
+        background-color: #212529;
     }
     .logo {
-        width: 90%;
-        max-width: 500px;
+        max-width: 200px;
+        width: 30%;
         display: block;
         margin: 0 auto;
         img {
             width: 100%;
+        }
+    }
+    .links{
+        li{
+            display: inline-block;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
         }
     }
     

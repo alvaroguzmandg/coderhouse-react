@@ -1,12 +1,11 @@
-import Navbar from "./components/Navbar/NavBar";  
+import Header from "./components/Navbar/NavBar";  
+
 
 function App() {
   return (
     
     <div className="App">
-      
-      <span className="subTitulo">TIENDA ONLINE</span>
-      <Navbar/>
+      <Header/>
     </div>
     
   )
