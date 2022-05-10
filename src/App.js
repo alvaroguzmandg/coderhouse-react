@@ -1,14 +1,16 @@
-import Header from "./components/Navbar/NavBar";  
+import NavBar from "./components/Navbar/NavBar";  
 import Footer from "./components/Footer/Footer";  
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+
 
 
 function App() {
   return (
 
     <div className="App">
-      <Header/>
-      <main className="contenedor-tienda">
-        Contenido de la tienda
+      <NavBar/>
+      <main>
+        <ItemListContainer/>
       </main>
       <Footer/>
     </div>

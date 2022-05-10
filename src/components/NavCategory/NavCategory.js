@@ -1,3 +1,4 @@
+import React from "react"
 export default function NavCategory(){
 
     const Button = ({texto}) =>{

@@ -1,6 +1,8 @@
+
 import CartWidget from "../CartWidget/CartWidget"
 import NavCategory from "../NavCategory/NavCategory"
-export default function Header(){
+export default function NavBar(){
+
     const navStyles={
         maxWidth: 1200,
         display:"flex",
@@ -23,7 +25,7 @@ export default function Header(){
             <li>PRODUCTOS</li>
             <li>NOSOTROS</li>
         </ul>
-        <CartWidget count={0}/>
+        <CartWidget cantidad={0}/>
         
     </header>
     <NavCategory/>
