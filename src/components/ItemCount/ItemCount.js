@@ -1,9 +1,8 @@
 import React from "react";
 
 
-export default function AddButton(){
+export default function AddButton({stock}){
   const [count, setCount] = React.useState(1)
-  const stock = 10;
 
 
   /* --------------------- Función para restar contador --------------------- */

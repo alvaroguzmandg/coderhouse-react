@@ -1,32 +1,30 @@
-import ItemCount from "../ItemCount/ItemCount";
-
+import React, { useEffect, useState } from "react"
+import ItemList from "../ItemList/ItemList"
+import {productos} from "../../data/products.js"
 export default function ItemListContainer(){
+
+  const [listaProductos, setListaProductos]=useState([])
+
+  const task = new Promise ((resolve, reject) => {
+  setTimeout(() => {
+    resolve(productos);
+  }, 2000)
+  
+})
+useEffect(()=>{
+  task
+  .then((res)=> setListaProductos(res))
+  .catch((error)=> console.log(error))
+}, [])
+
   return(
     <div className="itemlist-container">
-      
 
-      <div className="producto-bloque">
-        <span className="producto-nombre">Nike Zoom Next% 2</span>      
-        <span className="producto-imagen"><img src="https://alvaroguzmandg.github.io/coderhouse-js2/ENTREGA_FINAL/images/NNN.png" alt="Foto del Producto"/></span>
-        <span className="producto-precio">Precio $49.999</span>
-        <ItemCount/>
-      </div>
-
-      <div className="producto-bloque">
-        <span className="producto-nombre">Adidas Ultra Boost 21</span>      
-        <span className="producto-imagen"><img src="https://alvaroguzmandg.github.io/coderhouse-js2/ENTREGA_FINAL/images/AUB.png" alt="Foto del Producto"/></span>
-        <span className="producto-precio">Precio $33.499</span>
-        <ItemCount/>
-      </div>
-      
-
-    <div className="producto-bloque">
-      <span className="producto-nombre">Nike Pegasus 38</span>      
-      <span className="producto-imagen"><img src="https://alvaroguzmandg.github.io/coderhouse-js2/ENTREGA_FINAL/images/NPV.png" alt="Foto del Producto"/></span>
-      <span className="producto-precio">Precio $26.499</span>
-      <ItemCount/>
-    </div>
-        
+      {/* {productos.map((product) => (
+          <ItemList product={product} key={product.id}/>
+        )
+      )} */}
+      <ItemList listaProductos={listaProductos}/>
       
     </div>
   )
