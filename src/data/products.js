@@ -7,6 +7,7 @@ export const productos = [{
   "categoria": "Mujer",
   "precio": 34999, 
   "stock": 3,
+  "descripcion": "Zapatilla de Running - Marca: Adidas / Modelo: Ultra Boost 21",
   "image": "https://alvaroguzmandg.github.io/coderhouse-js2/ENTREGA_FINAL/images/AUB.png"
 },
 {
@@ -18,6 +19,7 @@ export const productos = [{
   "categoria": "Hombre",
   "precio": 42195, 
   "stock": 2,
+  "descripcion": "Zapatilla de Running - Marca: Adidas / Modelo: Boston 10",
   "image": "https://alvaroguzmandg.github.io/coderhouse-js2/ENTREGA_FINAL/images/ABA.png"
 },
 {
@@ -29,6 +31,7 @@ export const productos = [{
   "categoria": "Hombre",
   "precio": 26499, 
   "stock": 5,
+  "descripcion": "Zapatilla de Running - Marca: Nike / Modelo: Pegasus 38",
   "image": "https://alvaroguzmandg.github.io/coderhouse-js2/ENTREGA_FINAL/images/NPV.png"
 },
 {
@@ -40,6 +43,7 @@ export const productos = [{
   "categoria": "Hombre",
   "precio": 28599, 
   "stock": 8,
+  "descripcion": "Zapatilla de Running - Marca: Puma / Modelo: Deviate Nitro",
   "image": "https://alvaroguzmandg.github.io/coderhouse-js2/ENTREGA_FINAL/images/PDN.png"
 },
 {
@@ -51,6 +55,7 @@ export const productos = [{
   "categoria": "Mujer",
   "precio": 22199, 
   "stock": 1,
+  "descripcion": "Zapatilla de Running - Marca: Saucony / Modelo: Endorphin",
   "image": "https://alvaroguzmandg.github.io/coderhouse-js2/ENTREGA_FINAL/images/SEA.png"
 },
 {
@@ -62,6 +67,7 @@ export const productos = [{
   "categoria": "Hombre",
   "precio": 19899, 
   "stock": 9,
+  "descripcion": "Zapatilla de Running - Marca: Saucony / Modelo: Ride 14",
   "image": "https://alvaroguzmandg.github.io/coderhouse-js2/ENTREGA_FINAL/images/SRV.png"
 },
 
@@ -74,6 +80,7 @@ export const productos = [{
   "categoria": "Hombre",
   "precio": 31199, 
   "stock": 4,
+  "descripcion": "Zapatilla de Running - Marca: Saucony / Modelo: Speed",
   "image": "https://alvaroguzmandg.github.io/coderhouse-js2/ENTREGA_FINAL/images/SSB.png"
 },
 {
@@ -85,6 +92,7 @@ export const productos = [{
   "categoria": "Hombre",
   "precio": 29485,
   "stock": 3,
+  "descripcion": "Zapatilla de Running - Marca: New Balance / Modelo: Foam",
   "image": "https://alvaroguzmandg.github.io/coderhouse-js2/ENTREGA_FINAL/images/NFC.png"
 },
 {
@@ -96,6 +104,7 @@ export const productos = [{
   "categoria": "Hombre",
   "precio": 52143, 
   "stock": 7,
+  "descripcion": "Zapatilla de Running - Marca: Nike / Modelo: Tempo Next%",
   "image": "https://alvaroguzmandg.github.io/coderhouse-js2/ENTREGA_FINAL/images/NTB.png"
 },
 {
@@ -107,6 +116,7 @@ export const productos = [{
   "categoria": "Mujer",
   "precio": 21425, 
   "stock": 2,
+  "descripcion": "Zapatilla de Running - Marca: Adid / Modelo: SL 20",
   "image": "https://alvaroguzmandg.github.io/coderhouse-js2/ENTREGA_FINAL/images/ASR.png"
 },
 {
@@ -118,6 +128,7 @@ export const productos = [{
   "categoria": "Hombre",
   "precio": 33149, 
   "stock": 1,
+  "descripcion": "Zapatilla de Running - Marca: Nike / Modelo: Joyride",
   "image": "https://alvaroguzmandg.github.io/coderhouse-js2/ENTREGA_FINAL/images/NJB.png"
 },
 {
@@ -129,6 +140,7 @@ export const productos = [{
   "categoria": "Mujer",
   "precio": 32189, 
   "stock": 6,
+  "descripcion": "Zapatilla de Running - Marca: Nike / Modelo: React Infinity",
   "image": "https://alvaroguzmandg.github.io/coderhouse-js2/ENTREGA_FINAL/images/NRA.png"
 },
 {
@@ -140,6 +152,7 @@ export const productos = [{
   "categoria": "Hombre",
   "precio": 27399, 
   "stock": 4,
+  "descripcion": "Zapatilla de Running - Marca: Asic / Modelo: Nimbus 22",
   "image": "https://alvaroguzmandg.github.io/coderhouse-js2/ENTREGA_FINAL/images/ANG.png"
 },
 {
@@ -151,6 +164,7 @@ export const productos = [{
   "categoria": "Mujer",
   "precio": 21414, 
   "stock": 3,
+  "descripcion": "Zapatilla de Running - Marca: Asic / Modelo: Tri Noosa",
   "image": "https://alvaroguzmandg.github.io/coderhouse-js2/ENTREGA_FINAL/images/ATV.png"
 }, {
   "id": 15,
@@ -161,6 +175,7 @@ export const productos = [{
   "categoria": "Hombre",
   "precio": 49999, 
   "stock": 9,
+  "descripcion": "Zapatilla de Running - Marca: Nike / Modelo: Next2 %",
   "image": "https://alvaroguzmandg.github.io/coderhouse-js2/ENTREGA_FINAL/images/NNN.png"
 }, {
   "id": 16,
@@ -171,6 +186,7 @@ export const productos = [{
   "categoria": "Mujer",
   "precio": 49999, 
   "stock": 1,
+  "descripcion": "Zapatilla de Running - Marca: Nike / Modelo: Next2 %",
   "image": "https://alvaroguzmandg.github.io/coderhouse-js2/ENTREGA_FINAL/images/NNV.png"
 }, {
   "id": 17,
@@ -181,6 +197,7 @@ export const productos = [{
   "categoria": "Mujer",
   "precio": 19899, 
   "stock": 2,
+  "descripcion": "Zapatilla de Running - Marca: New Balance / Modelo: Wizard",
   "image": "https://alvaroguzmandg.github.io/coderhouse-js2/ENTREGA_FINAL/images/NWC.png"
 }, {
   "id": 18,
@@ -191,6 +208,7 @@ export const productos = [{
   "categoria": "Mujer",
   "precio": 33149, 
   "stock": 3,
+  "descripcion": "Zapatilla de Running - Marca: Nike / Modelo: Joyride",
   "image": "https://alvaroguzmandg.github.io/coderhouse-js2/ENTREGA_FINAL/images/NJB.png"
 },
 {
@@ -202,6 +220,7 @@ export const productos = [{
   "categoria": "Mujer",
   "precio": 42195, 
   "stock": 4,
+  "descripcion": "Zapatilla de Running - Marca: Adidas / Modelo: Boston 10",
   "image": "https://alvaroguzmandg.github.io/coderhouse-js2/ENTREGA_FINAL/images/ABA.png"
 }
 ]
