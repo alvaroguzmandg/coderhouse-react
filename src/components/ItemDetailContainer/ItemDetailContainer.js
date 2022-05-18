@@ -3,28 +3,19 @@ import ItemDetail from "../ItemDetail/ItemDetail"
 import React from "react"
 
 
-export default function ItemDetailtContainer(){
+export default function ItemDetailContainer(){
 
 
   const[item, setItem] = React.useState([])
     
   const getItem = new Promise((resolve,reject) =>{
       setTimeout(() =>{
-          resolve(productos);
+          resolve(setItem(productos[14]));
       },3000)
-  }).then(() => {
-      setItem(productos[14]);
-  }) 
-
-
-
+  })
+      
     return (
-        <>           
-        <div className="vista-detalle">
-          <ItemDetail item = {item} />
-        </div>
-        </>   
-
+      <ItemDetail item = {item} />  
     )
 
 }
