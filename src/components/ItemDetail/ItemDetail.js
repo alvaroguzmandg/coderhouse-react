@@ -1,6 +1,7 @@
-
+import ItemCount from "../ItemCount/ItemCount";
 export default function ItemDetail({item}){
     return(
+      <>
       <div className="vista-detalle">
         <div className="vista-producto-bloque">
           <span className="vista-bloque-izq">
@@ -13,9 +14,11 @@ export default function ItemDetail({item}){
             <span className="vista-producto-descripcion">
               Descripción del Producto:
               <span className="vista-producto-descripcion-texto">{item.descripcion}</span>
+              <ItemCount stock ={item.stock}/>
             </span>
           </span>
         </div>   
       </div>
+      </>
     )
 }

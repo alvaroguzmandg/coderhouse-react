@@ -1,21 +1,17 @@
-import {productos} from "../../data/products.js"
+
+import React from "react";
+import { productos } from "../../data/products";
 import ItemDetail from "../ItemDetail/ItemDetail"
-import React from "react"
-
-
-export default function ItemDetailContainer(){
-
-
-  const[item, setItem] = React.useState([])
-    
-  const getItem = new Promise((resolve,reject) =>{
-      setTimeout(() =>{
-          resolve(setItem(productos[14]));
-      },3000)
-  })
-      
-    return (
-      <ItemDetail item = {item} />  
-    )
-
+export default function ItemDetailContainer ({ title, productId }) {
+  const [item, setItem] = React.useState({});
+  React.useEffect(() => {
+    setItem(productos.find(item => item.id === productId));
+    console.log(productId)
+  }, [productId]);
+  return (
+    <>
+    <h1>{title}</h1>
+    <ItemDetail item = {item} />  
+    </>
+  );
 }

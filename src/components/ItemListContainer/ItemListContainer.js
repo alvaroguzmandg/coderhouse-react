@@ -1,32 +1,24 @@
+import ItemList from "../ItemList/ItemList";
 import React, { useEffect, useState } from "react"
-import ItemList from "../ItemList/ItemList"
-import {productos} from "../../data/products.js"
-export default function ItemListContainer(){
-
-  const [listaProductos, setListaProductos]=useState([])
-
-
-
-  const task = new Promise ((resolve, reject) => {
-  setTimeout(() => {
-    resolve(productos);
-  }, 2000)
+import { productos } from "../../data/products";
+export default function ItemListContainer ({title, categoryId}) {
+  const [items, setItems] = React.useState([]);
   
-})
-useEffect(()=>{
-  task
-  .then((res)=> setListaProductos(res))
-  .catch((error)=> console.log(error))
-}, [])
+  React.useEffect(() => {
 
+    
+    if(categoryId){
+      setItems(productos.filter(item => item.category_id === +categoryId));
+    }
+    else{
+      setItems(productos);
+    }
+  },[categoryId])
+  
+  
   return(
     <div className="itemlist-container">
-
-      {/* {productos.map((product) => (
-          <ItemList product={product} key={product.id}/>
-        )
-      )} */}
-      <ItemList listaProductos={listaProductos}/>
+      <ItemList items={items}/>
     </div>
   )
 }

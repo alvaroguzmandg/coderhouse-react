@@ -1,4 +1,6 @@
-import React from "react"
+import React from "react";
+import {NavLink} from "react-router-dom";
+
 export default function NavCategory(){
 
     const Button = ({texto}) =>{
@@ -9,10 +11,8 @@ export default function NavCategory(){
     return(
     <>
     <div className="filtro-principal">
-      <Button texto="Zapatillas" />
-      <Button texto="Pantalones" />
-      <Button texto="Remeras" />
-      <Button texto="Abrigos" />
+    <NavLink to="/category/1"><Button texto="Zapatillas Hombre" /></NavLink>
+    <NavLink to="/category/2"><Button texto="Zapatillas Mujer" /></NavLink>
     </div>
     </>
     )

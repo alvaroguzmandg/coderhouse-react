@@ -18,6 +18,12 @@ header{
           display: inline-block;
           font-size: 1.2rem;
           letter-spacing: 1px;
+          a{
+            color:white;
+            &:hover{
+                color:#ff5500;
+            }
+          }
       }
   }
   .carrito{
